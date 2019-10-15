@@ -18,7 +18,7 @@ date: 2019-10-15
 
 An attention model ($ W_{attention} $) can be applied to the encoded input sequence to get a encoded context representation of the totality rather than the RNN proccessed information (only contains information of time steps till current reached word).
 
-To produce a certain output $y_t$, it takes all the encoded hidden states $[h_1, h_2, ... h_n]$ (from a RNN, LSTM or bi-directional maybe) with the last decoder hidden state  $s_{t-1}$ to produce a set of weights $A_t =[a_{1t}, x_{2t}, ... x_{nt}]$ for each input time steps w.r.t the output time step t.
+To produce a certain output $y_t$, it takes all the encoded hidden states $[h_1, h_2, ... h_n]$ (from a RNN, LSTM or bi-directional maybe) with the last decoder hidden state  $s_{t-1}$ to produce a set of weights $A_t =[a_{1t}, a_{2t}, ... a_{nt}]$ for each input time steps w.r.t the output time step t.
 
 Where:
 
