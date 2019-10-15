@@ -9,11 +9,11 @@ date: 2019-10-15
 ## In a general seq2seq task: 
 
 {% raw %}
-  $ X =[x_1, x_2, ... x_n] $ -> encoder 
+  $ X =[x_1, x_2, ... x_n] $ 
   
-  -> encoded context (c) -> 
+  &rarr; encoder &rarr; encoded context (c) &rarr; decoder &rarr; 
   
-  decoder -> $ Y = [y_1, y_2, ... y_m] $
+  $ Y = [y_1, y_2, ... y_m] $
 {% endraw %}
 
 An attention model ($ W_{attention} $) can be applied to the encoded input sequence to get a encoded context representation of the totality rather than the RNN proccessed information (only contains information of time steps till current reached word).
