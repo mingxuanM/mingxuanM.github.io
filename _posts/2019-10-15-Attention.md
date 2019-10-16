@@ -6,12 +6,18 @@ date: 2019-10-15
 
 **Attention is the mechanism that can learn to align input features to a certain output element and combine input features according to the learnt alignment to produce the target output.**
 
-## In a general seq2seq task: 
+# In a general seq2seq task: 
+
+---
 
 {% raw %}
-  $ X =[x_1, x_2, ... x_n] $ 
+  $ X =[x_1, x_2, ... x_n] $ &rarr; 
   
-  &rarr; encoder &rarr; encoded context (c) &rarr; decoder &rarr; 
+  encoder &rarr; $[h_1, h_2, ... h_n]$ &rarr; 
+  
+  encoded context (c) &rarr; 
+  
+  decoder &rarr; $[s_1, s_2, ... s_m]$ &rarr; 
   
   $ Y = [y_1, y_2, ... y_m] $
 {% endraw %}
