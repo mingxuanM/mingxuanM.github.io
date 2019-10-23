@@ -35,5 +35,3 @@ Alignment weight: $ a_{it} = \frac{exp(W_{attention}(h_i,s_{t-1}))}{\sum_{i'=1}^
 The hidden context for $y_t$ can then be calculated as:
 
 $$ c_t = \sum_{i=1}^{n} a_{it} * h_i $$.
-
-## In a img classification task: 
