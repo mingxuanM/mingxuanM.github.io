@@ -8,13 +8,13 @@ date: 2019-10-24
 
 {% raw %}
 
-$$ V^*(s)\;&=\;\max_a Q^{\pi^*}(s,a) $$
+$$ V^(s)\;&=\;\max_a Q^{\pi}(s,a) $$
 
-$$ =\;\max_a\E_{\pi^*}\Big[\sum_{k=0}^\infty \gamma^k r_{t+k+1}\Big|s_t=s, a_t=a \Big] $$
+$$ =\;\max_{a, \pi}\Big[\sum_{k=0}^\infty \gamma^k r_{t+k+1}\Big|s_t=s, a_t=a \Big] $$
 
-$$ =\;\max_a\E_{\pi^*}\Big[r_{t+1} + \gamma V^*(s_{t+1}) \Big|s_t=s, a_t=a \Big] $$
+$$ =\;\max_{a, \pi}\Big[r_{t+1} + \gamma V(s_{t+1}) \Big|s_t=s, a_t=a \Big] $$
 
-$$ =\max_a \sum_{s'} P(s'|s_t=s, a_t=a) \big(r_{t+1|s,a} + \gamma V^*(s')\Big) $$
+$$ =\max_a \sum_{s'} P(s'|s_t=s, a_t=a) \big(r_{t+1|s,a} + \gamma V(s')\Big) $$
 
 {% endraw %}
 
