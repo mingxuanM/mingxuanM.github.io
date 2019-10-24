@@ -28,6 +28,7 @@ $$ =\max_a \sum_{s'} P(s'|s_t=s, a_t=a) \big(r_{t+1|s,a} + \gamma V(s')\Big) $$
 
 _A more detailed explanation of the code shall come later_
 
+---
 
 ## Links
 
